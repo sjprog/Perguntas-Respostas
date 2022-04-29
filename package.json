@@ -1,0 +1,19 @@
+{
+  "name": "perguntas-respostas",
+  "version": "1.0.0",
+  "description": "Plataforma de Perguntas e Respostas.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sjprog/Perguntas-Respostas.git"
+  },
+  "author": "Sidney Siqueira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sjprog/Perguntas-Respostas/issues"
+  },
+  "homepage": "https://github.com/sjprog/Perguntas-Respostas#readme"
+}
