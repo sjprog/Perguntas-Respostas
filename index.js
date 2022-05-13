@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 
 // Estou dizendo para o Express usar o EJS como View engine
-app.set('view engine','ejs');
+app.set('view engine', 'ejs');
 
 
 app.get("/",(req, res) =>{
@@ -10,6 +10,9 @@ app.get("/",(req, res) =>{
 
 });
 
-app.listen(8080,()=>{
+app.listen(8080, () => {
     console.log("App Rodando!");
-})
+});
+
+
+
