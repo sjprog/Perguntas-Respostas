@@ -5,9 +5,9 @@ const app = express();
 app.set('view engine', 'ejs');
 
 
-app.get("/", (req, res) => {
-    var nome = "Sidney";
-    var lang = "Javascript";
+app.get("/:nome/:lang", (req, res) => {
+    var nome = req.params.nome;
+    var lang = req.params.lang;
     res.render("index", {
         nome: nome,
         lang: lang,
@@ -15,7 +15,7 @@ app.get("/", (req, res) => {
         inscritos: 84150
      });
 
-});
+}); 
  
 app.listen(8080, () => {
     console.log("App Rodando!");
