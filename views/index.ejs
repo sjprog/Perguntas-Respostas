@@ -17,16 +17,17 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <!-- Bootstrap icons-->
 
-    <link rel="stylesheet" href="assets/style.css">
+   <link rel="stylesheet" href="/css/style.css">
 
-    <link rel="####" href="####" type="image/x-icon">
-
+   <link rel="####" href="####" type="image/x-icon">
+ 
 
     <title>Perguntas e Respostas</title>
 
 </head>
 
 <body>
+    <img src="/img/ALCOHOL INK 92.jpg" alt="Imagem">
     <h1>Perguntas e Respostas</h1>
     <hr>
 
@@ -42,32 +43,36 @@
     <% if(msg==true){ %>
         <h3>Mensagem com Erro! </h3>
 
-    <%} else {%>
-        <h3>Tudo Certo!!!</h3>
-    <%}%>
+        <%} else {%>
+            <h3>Tudo Certo!!!</h3>
+            <%}%>
 
 
-    <% produtos.forEach(function(produto){ %>
-        <hr>
-        <h3><%= produto.nome %></h3> <br>
-        <h4><%= produto.preco %></h4>
+                <% produtos.forEach(function(produto){ %>
+                    <hr>
+                    <h3>
+                        <%= produto.nome %>
+                    </h3> <br>
+                    <h4>
+                        <%= produto.preco %>
+                    </h4>
 
-    <% }) %>
+                    <% }) %>
 
 
 
-                <!-- jquery -->
-                <script src="jquery-3.5.1.min.js"></script>
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-                <!-- jquery -->
+                        <!-- jquery -->
+                        <script src="jquery-3.5.1.min.js"></script>
+                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                        <!-- jquery -->
 
-                <!-- Bootstrap -->
-                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-                    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-                    crossorigin="anonymous"></script>
-                <!-- Bootstrap -->
+                        <!-- Bootstrap -->
+                        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+                            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+                            crossorigin="anonymous"></script>
+                        <!-- Bootstrap -->
 
-                <script src="script.js"></script>
+                        <script src="script.js"></script>
 
 
 
