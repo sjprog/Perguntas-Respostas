@@ -11,9 +11,12 @@ app.get("/:nome/:lang", (req, res) => {
     var exibirMsg = false;
 
     var produtos = [
-        { nome: "Games", preco: 7.435 },
+        { nome: "Games", preco: 6.143 },
         { nome: "Cerveja", preco: 4.50 },
-        {nome: "Whey", preco: 350.00}
+        {nome: "Whey", preco: 350.00},
+        {nome: "Monitor", preco: 1.250},
+        {nome: "Carro", preco: 89.350},
+        {nome: "Sapato", preco: 150.00},
 ]
     res.render("index", {
         nome: nome,
