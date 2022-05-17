@@ -6,31 +6,17 @@ app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
 
-app.get("/:nome/:lang", (req, res) => {
-    var nome = req.params.nome;
-    var lang = req.params.lang;
-    var exibirMsg = false;
+app.get("/", (req, res) => { 
 
-    var produtos = [
-        { nome: "Games", preco: 6.143 },
-        { nome: "Cerveja", preco: 4.50 },
-        {nome: "Whey", preco: 350.00},
-        {nome: "Monitor", preco: 1.250},
-        {nome: "Carro", preco: 89.350},
-        {nome: "Sapato", preco: 150.00},
-]
-    res.render("index", {
-        nome: nome,
-        lang: lang,
-        empresa: "siqueira",
-        inscritos: 84150,
-        msg: exibirMsg,
-        produtos: produtos
-
-     });
+    res.render("index");
 
 }); 
  
+app.get("/perguntar", (req, res) => {
+    res.render("perguntar");
+})
+
+
 app.listen(8080, () => {
     console.log("App Rodando!");
 });
