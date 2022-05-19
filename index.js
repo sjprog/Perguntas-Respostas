@@ -10,13 +10,13 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 // Rotas
 
-app.get("/", (req, res) => { 
+app.get("/",(req, res) => { 
 
     res.render("index");
 
 }); 
  
-app.get("/perguntar", (req, res) => {
+app.get("/perguntar",(req, res) => {
     res.render("perguntar");
 });
 
