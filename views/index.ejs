@@ -1,14 +1,19 @@
-
 <%-include ('partials/head.ejs'); %>
 
-<body>
+    <body>
+        <%- include ('partials/navbar.ejs'); %>
+
+            <div class="container">
+
+                <% perguntas.forEach(pergunta => { %>
+                    <p>
+                        <%= pergunta.titulo %>
+                    </p>
+                    <% }) %>
+
+            </div>
 
 
 
-<%-include ('partials/navbar.ejs'); %>
-<h1>Sidney Junio</h1>
-
-
-
-</body>
-<%-include ('partials/footer.ejs'); %>
+    </body>
+    <%-include ('partials/footer.ejs'); %>
