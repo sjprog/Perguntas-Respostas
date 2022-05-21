@@ -2,6 +2,7 @@
 
 body{
      background-color: #4a4951; 
+     color: aliceblue;
     
 }
 
@@ -9,6 +10,9 @@ body{
     margin-top: 5vh;
 }
 
+.card{
+    color: #4a4951;
+}
 
 
 .btn{
