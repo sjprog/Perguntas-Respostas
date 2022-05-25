@@ -11,6 +11,9 @@
                 <p>
                     <%= pergunta.descricao %>
                 </p>
+                <p>
+                    <%= pergunta.email %>
+                </p>
                 <hr>
                 <form method="POST" action="/responder">
                     <h3>Responda</h3>
@@ -22,11 +25,13 @@
                 <hr>
                 <h3>Respostas</h3>
                 <hr>
-                <% respostas.forEach(resposta => {%>
+                <% respostas.forEach(resposta=> {%>
                     <br>
                     <div class="card">
                         <div class="card-body">
-                            <p><%= resposta.corpo %><br></p>
+                            <p>
+                                <%= resposta.corpo %><br>
+                            </p>
                         </div>
                     </div>
                     <% })%>

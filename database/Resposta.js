@@ -10,7 +10,8 @@ const Resposta = connection.define("respostas", {
     perguntaId: {
         type: Sequelize.INTEGER,
         allowNull: false
-    }
+    },
+   
 
 });
  
