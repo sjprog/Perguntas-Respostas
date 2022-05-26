@@ -10,6 +10,7 @@ const Pergunta = connection.define('perguntas', {
         type: sequelize.TEXT,
         allowNull: false
     },
+  
     
 });
 
