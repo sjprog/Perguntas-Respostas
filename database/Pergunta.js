@@ -9,7 +9,8 @@ const Pergunta = connection.define('perguntas', {
     descricao: {
         type: sequelize.TEXT,
         allowNull: false
-    },
+    }
+   
   
     
 });
