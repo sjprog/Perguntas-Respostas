@@ -11,6 +11,9 @@ const Resposta = connection.define("respostas", {
         type: Sequelize.INTEGER,
         allowNull: false
     },
+  
+    
+    
    
 
 });

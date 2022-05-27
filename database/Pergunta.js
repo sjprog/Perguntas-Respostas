@@ -2,6 +2,8 @@ const sequelize = require("sequelize");
 const connection = require("./database");
 
 const Pergunta = connection.define('perguntas', {
+    
+     
     titulo: {
         type: sequelize.STRING,
         allowNull: false
@@ -9,7 +11,11 @@ const Pergunta = connection.define('perguntas', {
     descricao: {
         type: sequelize.TEXT,
         allowNull: false
-    }
+    },
+    
+   
+
+    
    
   
     
