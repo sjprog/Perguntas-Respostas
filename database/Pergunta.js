@@ -14,6 +14,7 @@ const Pergunta = connection.define('perguntas', {
     },
     
    
+   
 
     
    
