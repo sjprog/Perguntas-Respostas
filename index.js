@@ -49,13 +49,13 @@ app.post("/salvarpergunta", (req, res) => {
     
     var titulo = req.body.titulo;
     var descricao = req.body.descricao;
-    var email = req.body.email;
+    
    
 
     Pergunta.create({
         titulo: titulo,
         descricao: descricao,
-        email: email,
+        
         
 
     }).then(() => {
